@@ -38,7 +38,10 @@ namespace DesingApplication
 
         private void iconCerrar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (MessageBox.Show("¿Estás seguro de salir de la aplicación?","Salir aplicación",MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         private void IconMaximizar_Click(object sender, EventArgs e)

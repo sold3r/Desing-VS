@@ -68,5 +68,25 @@ namespace DesingApplication
             ReleaseCapture();
             SendMessage(this.Handle, 0x112,0xf012,0);
         }
+
+        public void AbrirFormularios(object formularioProducto)
+        {
+            if (this.panelContenedor.Controls.Count > 0)
+            {
+                this.panelContenedor.Controls.RemoveAt(0);
+            }
+            Form frmprod = formularioProducto as Form;
+            frmprod.TopLevel = false;
+            frmprod.Dock = DockStyle.Fill;
+
+            this.panelContenedor.Controls.Add(frmprod);
+            this.panelContenedor.Tag = frmprod;
+            frmprod.Show();
+        }
+
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+            AbrirFormularios(new Productos());
+        }
     }
 }

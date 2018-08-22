@@ -184,6 +184,7 @@
             // 
             // btnProductos
             // 
+            this.btnProductos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnProductos.FlatAppearance.BorderSize = 0;
             this.btnProductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(142)))), ((int)(((byte)(155)))));
             this.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -197,6 +198,7 @@
             this.btnProductos.TabIndex = 1;
             this.btnProductos.Text = "Productos";
             this.btnProductos.UseVisualStyleBackColor = true;
+            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
             // 
             // pictureBox1
             // 
@@ -210,7 +212,7 @@
             // 
             // panelBarraTitulo
             // 
-            this.panelBarraTitulo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelBarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(128)))), ((int)(((byte)(136)))));
             this.panelBarraTitulo.Controls.Add(this.iconMinimizar);
             this.panelBarraTitulo.Controls.Add(this.iconRestaurar);
             this.panelBarraTitulo.Controls.Add(this.IconMaximizar);
@@ -252,6 +254,7 @@
             // 
             // IconMaximizar
             // 
+            this.IconMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.IconMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.IconMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("IconMaximizar.Image")));
             this.IconMaximizar.Location = new System.Drawing.Point(992, 12);

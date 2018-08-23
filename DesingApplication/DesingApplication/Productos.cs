@@ -28,7 +28,7 @@ namespace DesingApplication
         {
             DataTable dtproductos = new DataTable();
 
-            string connString = ConfigurationManager.ConnectionStrings["DesingApplication.Properties.Settings.Conexion"].ConnectionString;
+            string connString = ConfigurationManager.ConnectionStrings["bdAnimeMerchan"].ConnectionString;
 
             using (SqlConnection con = new SqlConnection(connString))
             {

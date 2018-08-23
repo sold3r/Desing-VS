@@ -16,6 +16,7 @@ namespace DesingApplication
         public Form1()
         {
             InitializeComponent();
+            
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
